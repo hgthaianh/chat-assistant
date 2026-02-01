@@ -22,7 +22,7 @@ A runnable demo of a chat assistant backend that supports **Session Memory** (vi
 
 1.  **Clone the repository**:
     ```bash
-    git clone <repo-url>
+    git clone https://github.com/hgthaianh/chat-assistant.git
     cd chat-assistant
     ```
 
