@@ -26,6 +26,13 @@ db = {
 class ChatRequest(BaseModel):
     message: str
 
+@app.post("/reset")
+async def reset_endpoint():
+    """Clear conversation history and memory for a fresh start."""
+    db["history"] = []
+    db["short_term_memory"] = None
+    return {"message": "Memory and History reset successfully."}
+
 @app.post("/chat")
 async def chat_endpoint(request: ChatRequest):
     # 1. Append user message to history

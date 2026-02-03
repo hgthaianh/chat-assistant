@@ -45,6 +45,10 @@ def run_demo():
     send_chat(f"Here is a lot of context for our memory test: {long_text[:50]}... (and so on)")
 
     print_step("FLOW 2: AMBIGUOUS QUERY HANDLING")
+    # Reset memory to prevent Flow 1 context from interfering with Flow 2
+    requests.post(f"{BASE_URL}/reset")
+    print("[Context Reset] Memory cleared to demonstrate Ambiguity Handling clearly.\n")
+
     # Step 1: Establish context
     send_chat("I am applying for the AI Engineer position at Vulcan Labs.")
     
