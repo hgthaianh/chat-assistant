@@ -15,7 +15,7 @@ A runnable demo of a chat assistant backend that supports **Session Memory** (vi
 *   **Language**: Python 3.10+
 *   **API Framework**: FastAPI
 *   **LLM Orchestration**: LangChain
-*   **Model**: Google Gemini 2.0 Flash
+*   **Model**: Google Gemini 2.5 Flash
 *   **Structured Output**: Pydantic & LangChain Structured Output
 
 ## 📦 Setup Instructions
